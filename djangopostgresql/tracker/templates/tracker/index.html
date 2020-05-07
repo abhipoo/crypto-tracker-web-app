@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Crypto Tracker</title>
+</head>
+
+<body>
+Last updated on : {{last_update}}
+
+
+<table>
+	<th>
+		<td>Currency</td>
+		<td>Value</td>
+	</th>
+	{% for currency in currencies %}
+	<tr>
+		<td>{{currency.currency}}</td>
+		<td>{{currency.currency_value}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+
+</body>
+</html>
